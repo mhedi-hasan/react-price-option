@@ -1,3 +1,4 @@
+import Link from "../Link/Link";
 
 const NavBar = () => {
 
@@ -12,8 +13,7 @@ const NavBar = () => {
         <nav>
             <ul className="md:flex justify-evenly py-5 bg-purple-300 mb-14 font-sans text-xl font-semibold">
                 {
-                    routes.map(route => <li key={route.id}>
-                        <a href={route.path}>{route.name}</a></li>)
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
             </ul>
         </nav>
