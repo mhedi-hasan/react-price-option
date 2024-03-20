@@ -13,7 +13,7 @@ const NavBar = () => {
     ]
     return (
         
-    <nav>
+    <nav className="p-3 md:py-0 md:p-0 py-2 px-4">
         <div  className="cursor-pointer text-3xl font-bold  md:hidden" onClick={() => setOpen(!open)}>
             {
                 open === true ? <IoCloseOutline  /> : 
@@ -21,7 +21,9 @@ const NavBar = () => {
             }
             
         </div>
-        <ul className="md:flex justify-evenly py-5 bg-purple-300 mb-14 font-sans text-xl font-semibold">
+        <ul className={`md:flex duration-1000 md:static absolute ml-3 justify-evenly px-4 md:px0 rounded-xl 
+        ${open ? 'top-10' : '-top-60'}
+        mt-3 bg-orange-400 md:py-2 py-5 mb-14 md:mb-2 font-sans text-xl font-semibold`}>
             {
                 routes.map(route => <Link key={route.id} route={route}></Link>)
             }
