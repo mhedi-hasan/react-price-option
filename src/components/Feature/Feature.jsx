@@ -3,7 +3,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 const Feature = ({feature}) => {
     return (
         <div>
-            <p className=' text-left py-1 flex items-center gap-2'> <AiFillCheckCircle className='text-2xl text-green-700' />{feature}</p>
+            <p className=' text-left py- flex items-center gap-2'> <AiFillCheckCircle className='text-2xl text-green-700' />{feature}</p>
         </div>
     );
 };
