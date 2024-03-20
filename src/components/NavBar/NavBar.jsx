@@ -21,7 +21,7 @@ const NavBar = () => {
             }
             
         </div>
-        <ul className={`md:flex duration-1000 md:static absolute ml-3 justify-evenly px-4 md:px0 rounded-xl 
+        <ul className={`md:flex duration-1000 md:static absolute md:ml-0 ml-3 justify-evenly px-4 md:px-0 md:rounded-none rounded-xl 
         ${open ? 'top-10' : '-top-60'}
         mt-3 bg-orange-400 md:py-2 py-5 mb-14 md:mb-2 font-sans text-xl font-semibold`}>
             {
