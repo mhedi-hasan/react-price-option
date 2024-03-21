@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "../Link/Link";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
+import { Tooltip } from "recharts";
 const NavBar = () => {
     const [open, setOpen] = useState(false)
     const routes = [
